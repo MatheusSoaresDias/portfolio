@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matheus Soares | Desenvolvedor Web</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="static/css/main.css">
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="div-bg" id="home">
+        <div class="contato-home">
+            <a href="mailto:matheus.soares.msd@gmail.com">
+                <i class="far fa-envelope"></i> matheus.soares.msd@gmail.com
+            </a>
+            <a href="https://api.whatsapp.com/send/?phone=5543999552193&text&app_absent=0">
+                <i class="fab fa-whatsapp"></i> (43) 9 9955-2193
+            </a>
+        </div>
+        <div class="cabecalho">
+            <header>
+                <a href=""> <img id="logo" src="static/assets/logo.svg" alt="Desenvolvedor Web"></a>
+                <nav id="nav">
+                    <button id="btn-mobile" aria-label="Abrir menu" aria-haspopup="true" aria-controls="menu"
+                        aria-expanded="false">
+                        <span id="hamburguer"></span>
+                    </button>
+                    <ul id="menu" role="menu">
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#sobre">SOBRE</a></li>
+                        <li><a href="#servicos">SERVIÇOS</a></li>
+                        <li><a href="#portfolio">PORTFÓLIO</a></li>
+                        <li><a href="#contato">CONTATO</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <div class="cabecalho-espaco"></div>
+        <div class="home-content">
+            <div class="div-home">
+                <h1>MATHEUS SOARES</h1>
+                <h4>FREELANCER</h4>
+                <h4>UI DESIGNER</h4>
+                <h4>PROGRAMADOR JAVA</h4>
+                <h4>DESENVOLVEDOR WEB</h4>
+            </div>
+        </div>
+    </section>
+    <section id="sobre">
+        <div class="linha">
+            <div class="left"></div>
+            <div class="center">
+                <h3 class="h3-block">SOBRE</h3>
+            </div>
+            <div class="right"></div>
+        </div>
+        <div class="content">
+            <div class="about-left">
+                <p>Procuro experimentar sempre as novidades no desenvolvimento web para desenvolver sites mais
+                    modernos
+                    e avançados. Desenvolvedor Java e amante do conhecimento. Sempre de olho em novos desafios e
+                    ideias
+                    inovadoras.</p>
+                <p>Formado no curso Técnico em Informática integrado ao Ensino Médio pelo <strong>IFPR - Campus
+                        Jacarezinho</strong>.
+                </p>
+                <p>Trabalhei em alguns projetos pequenos para estudo e um projeto grande para o desenvolvimento do
+                    TCC.
+                </p>
+                <p>Telefone / Whatsapp : <strong><a
+                            href="https://api.whatsapp.com/send/?phone=5543999552193&text&app_absent=0">(43)
+                            99955-2193</a></strong></p>
+                <p>Santo Antônio da Platina - PR</p>
+            </div>
+            <div class="about-right">
+                <img id="msd" src="static/assets/matheussoares.svg" alt="Matheus Soares">
+            </div>
+        </div>
+    </section>
+    <section id="servicos">
+        <div class="linha">
+            <div class="left"></div>
+            <div class="center">
+                <h3>SERVIÇOS</h3>
+            </div>
+            <div class="right"></div>
+        </div>
+        <div class="container">
+            <div>
+                <img src="static/assets/front.svg" alt="Front-End">
+                <h4>Desenvolvedor Front-End</h4>
+                <p>HTML5, CSS3, JavaScript, Bootstrap, jQuery e React.</p>
+            </div>
+            <div>
+                <img src="static/assets/sites.svg" alt="Front-End">
+                <h4>Criação de Sites</h4>
+                <p>Desenvolvedor de Sites, HotSites e Landing Pages. </p>
+            </div>
+            <div>
+                <img src="static/assets/ecomm.svg" alt="Front-End">
+                <h4>Loja Virtual / E-commerce</h4>
+                <p>Criação de Loja Online, para venda de produtos por meio da internet</p>
+            </div>
+            <div>
+                <img src="static/assets/back.svg" alt="Front-End">
+                <h4>Desenvolvedor Back-End</h4>
+                <p>Java, Spring Boot, JSF, MySQL e MongoDB.</p>
+            </div>
+            <div>
+                <img src="static/assets/responsive.svg" alt="Front-End">
+                <h4>Design Responsivo</h4>
+                <p>Site adaptável a todos os dispositivos, sem deixar nenhum recurso faltando</p>
+            </div>
+            <div>
+                <img src="static/assets/uml.svg" alt="Front-End">
+                <h4>Metodologia UML</h4>
+                <p>Padrão UML de modelagem da estrutura de projetos</p>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio">
+        <div class="linha">
+            <div class="left"></div>
+            <div class="center">
+                <h3>PORTFÓLIO</h3>
+            </div>
+            <div class="right"></div>
+        </div>
+        <div class="div-portfolio">
+            <div type="button" data-bs-toggle="modal" data-bs-target="#projeto1">
+                <img src="static/assets/tccport.svg" alt="Projeto TCC">
+            </div>
+            <div type="button" data-bs-toggle="modal" data-bs-target="#projeto2">
+                <img src="static/assets/so7port.svg" alt="Semana OmniStack 7">
+            </div>
+            <div type="button" data-bs-toggle="modal" data-bs-target="#projeto3">
+                <img src="static/assets/so8port.svg" alt="Semana OmniStack 8">
+            </div>
+        </div>
+
+        <div class="modal fade" id="projeto1" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="header">
+                        <h3>Projeto TCC</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <img src="static/assets/paginicial.svg" alt="">
+                    <img src="static/assets/pagusuario.svg" alt="">
+                    <img src="static/assets/pagcadas.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="projeto2" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="header">
+                        <h3>Projeto Semana OmniStack 7.0</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <img src="static/assets/so7feed.svg" alt="">
+                    <img src="static/assets/so7new.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="projeto3" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="header">
+                        <h3>Projeto Semana OmniStack 8.0</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <img src="static/assets/so8.svg" alt="">
+                    <img src="static/assets/so8main.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="ver">
+            <a href="https://github.com/MatheusSoaresDias">Ver mais projetos</a>
+        </div>
+    </section>
+    <footer>
+        <section id="contato">
+            <div class="linha">
+                <div class="left"></div>
+                <div class="center">
+                    <h3>CONTATO</h3>
+                </div>
+                <div class="right"></div>
+            </div>
+            <div class="contact">
+                <div class="contact-left">
+                    <img id="logoContato" src="static/assets/logo.svg" alt="logo">
+                    <p>2021 &copy; Matheus Soares. Todos os direitos reservados</p>
+                </div>
+                <div class="contact-right">
+                    <a href="https://www.linkedin.com/in/matheus-soares-dias/"><img src="static/assets/linkedin.svg"
+                            alt="LinkedIn"></a>
+                    <a href="https://www.instagram.com/matheusoaresdias/"><img src="static/assets/instagram.svg"
+                            alt="Instagram"></a>
+                    <a href="https://github.com/MatheusSoaresDias"><img src="static/assets/github.svg" alt="GitHub"></a>
+                    <a href="https://facebook.com/matheusoaresdias"><img src="static/assets/facebook.svg"
+                            alt="Facebook"></a>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+
+<script src="https://kit.fontawesome.com/e1b10ffb63.js" crossorigin="anonymous"></script>
+<script src="static/js/header-fixo.js"></script>
+<script src="static/js/menu.js"></script>
+<script src="static/js/bootstrap.min.js"></script>
+
+</html>

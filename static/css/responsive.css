@@ -1,0 +1,171 @@
+/* CONVENÇÃO RESPOSIVIDADE
+    320, 480, 760, 960, 1200, 1600
+*/
+
+@media (max-width: 1300px) and (min-width: 961px) {
+    .div-portfolio div + div {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 1160px) {
+    header, .home-content {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 960px) {
+    header {
+        padding: 20px;
+    }
+    li a {
+        width: 100%;
+    }
+    #menu {
+        background-color: rgba(10, 10, 10, .6);
+        display: block;
+        height: 0;
+        overflow-y: hidden;
+        position: absolute;
+        right: 0px;
+        top: calc(70px + 2em);
+        transition: .3s;
+        visibility: hidden;
+        width: 100%;
+        z-index: 1000;
+    }
+    #menu li {
+        margin: 0;
+    }
+    #menu a {
+        height: 100%;
+        padding: 1rem 0;
+    }
+    #nav.active #menu {
+        height: 280px;
+        visibility: visible;
+    }
+    #btn-mobile {
+        background: none;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        font-size: 1rem;
+        gap: .5rem;
+        padding: .5rem 1rem;
+    }
+    #hamburguer {
+        border-top: 2px solid;
+        width: 25px;
+        color: white;
+    }
+    #hamburguer::after, #hamburguer::before {
+        background-color: currentColor;
+        content: '';
+        display: block;
+        height: 2px;
+        margin-top: 7px;
+        position: relative;
+        transition: .3s;
+        width: 25px;
+    }
+    #nav.active #hamburguer {
+        border-top: transparent;
+    }
+    #nav.active #hamburguer::before {
+        transform: rotate(135deg);
+    }
+    #nav.active #hamburguer::after {
+        transform: rotate(-135deg);
+        top: -9px;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact div {
+        margin: 20px 0 0 0;
+    }
+    .contact div:nth-child(1) {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .div-portfolio {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .div-portfolio div {
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+        width: calc(100% -30px);
+    }
+    .div-portfolio div + div{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 760px) {
+    .div-home {
+        margin: 0 auto;
+    }
+    #servicos .container {
+        justify-content: center;
+    }
+    .div-portfolio {
+        padding: 10px;
+    }
+    .modal-content {
+        padding: 5px;
+    }
+    .modal-content img {
+        width: 100%;  
+    }
+    .modal-content .header h3 {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contato-home {
+        padding: 5px;
+    }
+    .contato-home a {
+        font-size: .7em;
+    }
+}
+
+
+@media (max-width: 425px) {
+    header {
+        padding: 20px;
+    }
+    #logo {
+        height: 40px;
+    }
+    .home-content {
+        margin:  50px 0px;
+    }
+    .home-content .div-home {
+        margin-bottom: 30px;
+    }
+    #btn-mobile {
+        padding: 0;
+    }
+    .div-portfolio div {
+        width: calc(100% - 30px);
+    }
+    .content {
+        padding: 3vh;
+        font-size: .8rem;
+    }
+    
+}

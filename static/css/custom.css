@@ -1,0 +1,318 @@
+/* HOME */
+.div-bg {
+    background: url(../assets/fundo.svg) fixed;
+    background-size: cover;
+    height: calc(100vh + 60px);
+    width: 100%;
+    position: relative;
+}
+
+.contato-home {
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--secondary);
+    height: 2em;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.contato-home a {
+    color: var(--primary);
+}
+
+.contato-home a + a {
+    margin-left: 20px;
+}
+
+.cabecalho--fixo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 7px rgba(0,0,0,0.2);
+    background-color: rgba(50, 50, 50, 0.8);
+    z-index: 2000;
+}
+
+
+header {
+    align-items: center;
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1140px;
+}
+
+nav {
+    display: block;
+}
+
+li {
+    margin-left: 60px;
+}
+
+li a {
+    display: block;
+    padding: .2rem;
+    color: white;
+    height: 30px;
+    transition: ease-in .3s linear;
+    width: calc(100% + 10px);
+    text-align: center;
+}
+
+li a:hover {
+    color: white;
+    background-color: var(--primary);
+}
+
+#logo {
+    height: 50px;
+}
+
+.div-home {
+    margin: 50px 0 0 200px;
+}
+
+.div-home h1 {
+    color: white;
+    text-shadow: 2px 2px 6px rgba(150, 150, 150, 0.8);
+}
+
+.div-home h4 {
+    color: white;
+    text-shadow: 2px 2px 6px rgba(150, 150, 150, 0.8);
+}
+
+#btn-mobile {
+    display: none;
+}
+
+.home-content {
+    display: flex;
+    margin: 50px auto;
+    max-width: 1140px;
+    flex-wrap: wrap;
+}
+
+/* HOME */
+
+/* SOBRE */
+#sobre {
+    color: #fff;
+    position: relative;
+    top: -60px;
+}
+
+#sobre strong a {
+    color: white;
+}
+
+#msd {
+    width: 300px;
+}
+
+.content {
+    bottom: -60px;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    padding: 15vh;
+}
+
+.about-left p {
+    letter-spacing: 1px;
+}
+
+.about-right {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+/* SOBRE */
+
+/* SERVIÇOS */
+#servicos {
+    position: relative;
+    top: -60px;
+}
+
+#servicos .left, #servicos .right {
+    background-color: white;
+}
+
+#servicos .center {
+    background-color: var(--secondary);
+    color: white;
+}
+
+#servicos img {
+    height: 50px;
+}
+
+#servicos .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 100%;
+    margin-top: 60px;
+}
+
+#servicos .container div {
+    border-radius: 15px;
+    height: 200px;
+    margin-bottom: 60px;
+    text-align: center;
+    width: 340px;
+}
+
+#servicos .container div h4 {
+    margin: 20px 0;
+}
+
+#servicos .container div img {
+    height: 50px;
+    margin-top: 10px;
+}
+/* SERVIÇOS */
+
+/* PORTFOLIO */
+#portfolio .center {
+    background-color: white;
+    color: var(--secondary);
+}
+
+#portfolio {
+    background-color: var(--secondary);
+    position: relative;
+    top: -60px;
+}
+
+.div-portfolio div {
+    display: block;
+    max-width: 370px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.div-portfolio div img {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.div-portfolio {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 10vh 15vh;
+}
+
+.ver {
+    display: flex;
+    justify-content: center;
+}
+
+.ver a {
+    border: 1px solid white;
+    border-radius: 7px;
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 70px;
+    padding: 10px;
+    transition: linear;
+}
+
+.ver a:hover {
+    background-color: white;
+    color: var(--secondary);
+}
+
+.modal-dialog {
+    max-width: 760px !important;
+}
+
+.modal-content {
+    margin-top: 75px;
+    background: transparent;
+    border: none;
+    width: 100%;
+}
+
+.modal-content .header h3 {
+    color: var(--secondary);
+}
+
+.modal-content .header {
+    width: 100%;
+    background: var(--cultured);
+    padding: 10px 0;
+    border-radius: 7px 7px 0 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.modal-content .header button {
+    position: absolute;
+    right: 20px;
+}
+
+.modal-content img {
+    margin-top: 10px;
+    width: 100%;
+}
+/* PORTFOLIO */
+
+/* CONTATO */
+#contato {
+    max-height: 300px;
+    position: relative;
+    top: -60px;
+}
+
+#contato .left, #contato .right {
+    background-color: white;
+}
+    
+#contato .center {
+    background-color: var(--secondary);
+    color: white;
+}
+
+#logoContato {
+    height: 50px;
+}
+
+.contact-left {
+    margin: 30px 0 0 30px;
+}
+
+.contact-left img {
+    margin-bottom: 20px;
+}
+
+.contact-left p {
+    color: var(--secondary);
+}
+
+.contact-right {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin: 30px 30px 0 0;
+}
+
+.contact-right img {
+    height: 40px;
+    margin-left: 20px;
+    
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+}
+/* CONTATO */
